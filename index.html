@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="name-texts">
+            <h1 class="name">Hello</h1>
+            <p class="name-username">Nshan Zakaryan</p>
+        </div>
+        <img class="image" src="./mauntain-pic.png" width="300px" height="300px" alt="image"/>
+        <button class="btn">Click me</button>
+    </div>
+    <script>
+        const buttons = document.getElementsByClassName("btn");        
+        if (buttons.length > 0) {
+            const button = buttons[0];
+            button.addEventListener('click', () => {
+                alert('Button clicked!');
+            });
+        }
+    </script>
+</body>
+</html>
